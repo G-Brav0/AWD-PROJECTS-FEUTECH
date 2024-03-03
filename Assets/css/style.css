@@ -8,8 +8,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(45deg, #f7f4ba, #af4261);
+    background: linear-gradient(45deg, #0a7e7a, #057324);
+    /* background: linear-gradient(45deg, #0fb9b3, #059c30); */
     min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1,h4{
+    animation: glowing 2s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
@@ -40,22 +53,23 @@ body {
             padding: 1rem;
             background: linear-gradient(
                 45deg,
-                #ff2c7d 0%,
-                #ff2c7d 42%,
-                #ffffff 42%,
-                #ffffff 45%,
-                #ff2c7d 45%,
-                #ff2c7d 48%,
-                #ffffff 48%,
-                #ffffff 51%,
-                #ff2c7d 51%,
-                #ff2c7d 54%,
-                #ffffff 54%,
-                #ffffff 57%,
-                #ff2c7d 57%,
-                #ff2c7d 60%,
-                #ffffff 60%,
-                #ffffff 100%
+                /* 02b78d */
+                #05ad34 0%,
+                #057324 42%,
+                #0fb9b3 42%,
+                #097976 45%,
+                #05ad34 45%,
+                #057324 48%,
+                #0fb9b3 48%,
+                #097976 51%,
+                #05ad34 51%,
+                #057324 54%,
+                #0fb9b3 54%,
+                #097976 57%,
+                #05ad34 57%,
+                #057324 60%,
+                #0fb9b3 60%,
+                #097976 100%
             );
             background-size: 300%;
             box-shadow: 2px 3px 5px white;
@@ -71,11 +85,12 @@ body {
 
             &:hover {
                 animation: colorChange 0.3s ease-in-out;
-                box-shadow: 3px 5px 5px #ff2c7d;
+                box-shadow: 3px 5px 5px #bbe002;
                 background-position: 100%;
 
                 .cardTitle {
-                    color: #ff2c7d;
+                    /* color: #037c25; */
+                    animation: glowing 2s infinite;
                     font-weight: 700;
                 }
             }
@@ -89,5 +104,20 @@ body {
     }
     100% {
         background-position: 100%;
+    }
+}
+
+@keyframes glowing {
+    0% {
+        color: #b7d606;
+        text-shadow: 0 0 5px #b7d606;
+    }
+    50% {
+        color: #ffffff;
+        text-shadow: 0 0 10px #ffffff;
+    }
+    100% {
+        color: #b7d606;
+        text-shadow: 0 0 5px #b7d606;
     }
 }

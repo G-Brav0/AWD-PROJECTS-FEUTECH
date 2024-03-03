@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: rgb(2, 170, 114);
+    align-items: center;
+    background-color: rgb(20, 20, 20) ;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+h1 {
+    padding-right: 65px;
+    animation: glowing 2s infinite;
+}
+
+@keyframes glowing {
+    0% {
+        color: rgb(2, 170, 114);
+        text-shadow: 0 0 5px rgb(2, 170, 114);
+    }
+    50% {
+        color: rgb(255, 0, 0);
+        text-shadow: 0 0 10px rgb(255, 0, 0);
+    }
+    100% {
+        color: rgb(2, 170, 114);
+        text-shadow: 0 0 5px rgb(2, 170, 114);
+    }
+}
+
+/* to control block layout */
+#block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 980px; /* controlling the rows & columns */
+    width: calc(100% - 20px); 
+}
+
+/* to control the shapes of your img */
+.img_reveal{
+    background-color: rgb(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    cursor: pointer;
+    height: 260px;
+    position: relative;
+    width: 300px;
+    opacity: 0; /* starts at zero visibility */
+    transition: opacity 1500ms;
+}
+
+.img_reveal:hover{
+    opacity: 1;    /* picture reveal upon hover */
+}
+
+.img_reveal::before{
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 500ms;
+    z-index: 2;
+}
+
+.img_reveal::after{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+
+    opacity: 0;
+    transition: opacity 500ms;
+    z-index: 1;
+}
+
+/* for image bg */
+#img1{
+    background-image: url(https://preview.redd.it/heres-the-jin-kazama-tekken-8-wallpaper-v0-t01zydvo175a1.jpg?width=640&crop=smart&auto=webp&s=45bd1cad96188a46f0a1537d4e402c496f60b0f3);
+    background-size: cover;
+}
+
+#img2{
+    background-image: url(https://i.pinimg.com/736x/78/24/b2/7824b265943ac9fa40ce342333939e54.jpg);
+    background-size: cover;
+}
+
+#img3{
+    background-image: url(https://i.redd.it/8kc93y5la0p91.jpg);
+    background-size: cover;
+}
+
+#img4{
+    background-image: url(https://images2.fanpop.com/image/photos/12600000/Hwoarang-tekken-hwoarang-12672953-1280-1024.jpg);
+    background-size: cover;
+}
+
+#img5{
+    background-image: url(https://cdn.mobygames.com/covers/7350642-tekken-7-dlc-7-armor-king-playstation-4-front-cover.jpg);
+    background-size: cover;
+}
+
+#img6{
+    background-image: url(https://i.redd.it/tekken-8-king-key-art-wallpaper-v0-6kvji8bfwe5a1.jpg?width=3107&format=pjpg&auto=webp&s=7fab686e136375c0ba1c01433b091edc12aa2b3a);
+    background-size: cover;
+}  

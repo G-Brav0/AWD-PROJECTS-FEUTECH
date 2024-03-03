@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+button, .header, .card-header{
+    color: black;
+    background-image: linear-gradient(45deg, rgba(7, 143, 150, 0.5) 0%, rgba(255, 255, 255, 0.8) 100%);
+}
+
+#bg{
+    /* color: rgb(3, 186, 116); */
+    background-image: url(https://wallpapercave.com/wp/wp2729921.gif);
+    /* background-size: 1600px 750px; */
+    background-size: 1600px 1028px;
+}
+
+.card-body{
+    /* color: rgb(3, 186, 116); */
+    background-image: url(https://media3.giphy.com/media/3o6vXTpomeZEyxufGU/200w.gif?cid=6c09b9522cqj7n0d06bgpryl02fbqodf5bwcy2elzpz2kmpp&ep=v1_gifs_search&rid=200w.gif&ct=g);
+    background-size: cover;
+}
+
+html {
+    font-size: 14px;
+  }
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+  
+.container {
+    max-width: 960px;
+}
+  
+.pricing-header {
+    max-width: 700px;
+}
+  
+.card-deck .card {
+    min-width: 220px;
+}
+  
+.border-top { 
+    border-top: 1px solid #e5e5e5; 
+}
+
+.border-bottom { 
+    border-bottom: 1px solid #e5e5e5; 
+}  
+
+.box-shadow { 
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); 
+}
